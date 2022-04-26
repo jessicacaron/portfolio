@@ -354,6 +354,21 @@ main .contact-form label {
   margin: 0 auto;
 }
 
+.gallery .col .icons {
+  margin: 0 auto;
+  border: 0.5px solid #57B4B5;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.gallery .col i {
+  font-size: 1.4em;
+  padding-left: .5em;
+  padding-right: .5em;
+  padding-top: .5rem;
+}
+
 .gallery .col .card {
   margin: 0 auto;
   width: 90%;
@@ -373,12 +388,20 @@ main .contact-form label {
   background-image: url("../img/cardeal-thumbnail.png");
 }
 
+.card3 {
+  background-image: url("../img/webdev-thumbnail.png");
+}
+
 .card4 {
-  background-image: url("../img/tri-succed-thumbnail.png");
+  background-image: url("../img/wilson-thumbnail.png");
 }
 
 .card5 {
   background-image: url("../img/pandasia-thumbnail.png");
+}
+
+.card6 {
+  background-image: url("../img/tri-succed-thumbnail.png");
 }
 
 .card {
