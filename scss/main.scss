@@ -204,7 +204,7 @@ p {
     }
     .contact-pane{
       //background-color: #FFE3EA;
-      height: 100%;
+      max-height: 100%;
     }
   }
   .contact-info {
@@ -214,6 +214,7 @@ p {
     p {
       font-size: 1.4em;
       padding-left: 4.5rem;
+      
     }
   }
 }
