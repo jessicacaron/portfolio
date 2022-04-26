@@ -624,6 +624,19 @@ footer {
     padding-top: 5rem;
     max-width: 85%;
   }
+  .hero-contact {
+    
+    .row {
+
+      .contact-pane {
+
+        p {
+          font-size: 1.1em;
+          padding-left: 2.5rem;
+        }
+      }
+    }
+  }
   
 }
 @media screen and (max-width: 900px) {
