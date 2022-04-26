@@ -212,7 +212,7 @@ p {
 
 .hero-contact .contact-info p {
   font-size: 1.4em;
-  padding-left: 4.5rem;
+  padding-left: 2.5rem;
 }
 
 .skills {
@@ -252,10 +252,6 @@ hr {
 
 .main-timeline {
   padding-top: 5rem;
-}
-
-main {
-  overflow-x: hidden;
 }
 
 main .contact-form {
