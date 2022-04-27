@@ -597,6 +597,125 @@ main p:last-child {
   border-bottom-left-radius: 0;
 }
 
+.project-heading {
+  overflow-x: hidden;
+  position: relative;
+  padding-bottom: 10rem;
+}
+
+.project-heading .row {
+  height: 7vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(#376E6F), color-stop(#ff55b2), to(#DA7B93));
+  background-image: linear-gradient(to right, #376E6F, #ff55b2, #DA7B93);
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+.project-heading #jc {
+  position: absolute;
+  max-height: 190px;
+  top: 5%;
+  left: 0;
+}
+
+.project-heading #me1 {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  max-height: 320px;
+}
+
+.description-body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: white;
+}
+
+.description-body .heading3 {
+  padding-bottom: 3rem;
+}
+
+.description-body h3 {
+  color: #031B1C;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.4em;
+}
+
+.description-body hr {
+  margin: 0 auto;
+  color: #031B1C;
+  margin: 3rem;
+}
+
+.project-description {
+  margin: 0 auto;
+}
+
+.project-description .row {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.project-description .row .col {
+  margin: 0 auto;
+}
+
+.project-description .row .col .project-title h3 {
+  color: #57B4B5;
+}
+
+.project-description .row .col .project-title p {
+  color: #031B1C;
+  font-size: 1.2em;
+  padding-right: 2rem;
+}
+
+.project-description .row .col img {
+  max-width: 80%;
+  min-width: 50%;
+  padding-left: 1rem;
+}
+
+.project-expanded {
+  border-top: 1px solid #9b9898;
+  padding-top: 3rem;
+  margin-top: 3rem;
+}
+
+.project-expanded .row {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.project-expanded .row .col {
+  padding: 3rem;
+}
+
+.project-expanded .row .col p {
+  color: #031B1C;
+}
+
+.project-expanded .row .col p i {
+  color: #57B4B5;
+  padding-right: 2rem;
+  font-size: 2em;
+}
+
+.project-expanded .row .col2 {
+  border: 1px solid #9b9898;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+
+.project-expanded .row .col2 ul > li {
+  list-style: none;
+}
+
+.project-expanded .row .col2 .sub-desc {
+  padding-bottom: 2rem;
+}
+
 footer {
   overflow-x: hidden;
   height: 20vh;
@@ -677,6 +796,33 @@ footer .row .col2 {
   .hero-contact .row .contact-pane p {
     font-size: 1.1em;
     padding-left: 2.5rem;
+  }
+  .project-description {
+    margin: 0 auto;
+  }
+  .project-description .row {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .project-description .row .col {
+    margin: 0 auto;
+  }
+  .project-description .row .col .project-title h3 {
+    color: #57B4B5;
+    font-size: 1.4em;
+  }
+  .project-description .row .col .project-title p {
+    color: #031B1C;
+    font-size: 1em;
+    padding-right: 2rem;
+  }
+  .project-description .row .col img {
+    max-width: 80%;
+    min-width: 50%;
+    padding-left: 1rem;
+  }
+  .proj-page-title h1 {
+    font-size: 2em;
   }
 }
 

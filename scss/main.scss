@@ -177,6 +177,7 @@ p {
   }
 }
 
+
 .hero-contact {
   padding-top: 3rem;
   height: 55vh;
@@ -258,8 +259,6 @@ hr {
   padding-top: 5rem;
 }
 main {
-  //overflow-x: hidden;
-
 
   .contact-form {
     margin: 0 auto;
@@ -573,6 +572,120 @@ main {
   }
 }
 
+  //  PROJECT DESCRIPTIONS STYLES //
+  .project-heading {
+    overflow-x: hidden;
+    position: relative;
+    padding-bottom: 10rem;
+  
+    .row {
+      height: 7vh;
+      background-image: linear-gradient(to right, $med-dark-teal , $bright-pink, $med-light-pink);
+      margin-top: 6rem;
+      margin-bottom: 3rem;
+    }
+    #jc {
+      position: absolute;
+      max-height: 190px;
+      top: 5%;
+      left: 0;
+    }
+    #me1 {
+      position: absolute;
+      top: 10%;
+      right: 10%;
+      max-height: 320px;
+    }
+  }
+
+.description-body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: white;
+
+  .heading3 {
+    padding-bottom: 3rem;
+  }
+  h3 {
+    color: $dark-teal;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.4em;
+  }
+  hr {
+    margin: 0 auto;
+    color: #031B1C;
+    margin: 3rem;
+  }
+}
+.project-description {
+  margin: 0 auto;
+
+
+  .row {
+    width: 90%;
+    margin: 0 auto;
+
+
+
+    .col {
+      margin: 0 auto;
+
+
+      .project-title {
+
+        h3 {
+          color: $med-light-teal;
+        }
+        p{
+          color: $dark-teal;
+          font-size: 1.2em;
+          padding-right: 2rem;
+
+        }
+      }
+      img {
+        max-width: 80%;
+        min-width: 50%;
+        padding-left: 1rem;
+      }
+    }
+  }
+}
+.project-expanded {
+  border-top: 1px solid $med-gray;
+  padding-top: 3rem;
+  margin-top: 3rem;
+
+  .row {
+    width: 85%;
+    margin: 0 auto;
+
+    .col {
+      padding: 3rem;
+
+      p {
+        color: $dark-teal;
+
+        i {
+          color: $med-light-teal;
+          padding-right: 2rem;
+          font-size: 2em;
+        }
+      }
+    }
+    .col2 {
+      border: 1px solid $med-gray;
+      max-height: fit-content;
+
+      ul>li {
+        list-style: none;
+      }
+      .sub-desc {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}
 
 
 footer {
@@ -656,9 +769,45 @@ footer {
       }
     }
   }
+  .project-description {
+    margin: 0 auto;
   
+    .row {
+      width: 90%;
+      margin: 0 auto;
+
+      .col {
+        margin: 0 auto;
+  
+        .project-title {
+  
+          h3 {
+            color: $med-light-teal;
+            font-size: 1.4em;
+          }
+          p{
+            color: $dark-teal;
+            font-size: 1em;
+            padding-right: 2rem;
+  
+          }
+        }
+        img {
+          max-width: 80%;
+          min-width: 50%;
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+  .proj-page-title {
+    h1 {
+      font-size: 2em;
+    }
+  }
 }
 @media screen and (max-width: 900px) {
+  
   .skills {
     padding-left: 5%;
     padding-right: 5%;
