@@ -120,8 +120,8 @@ p {
         background-repeat: no-repeat;
         background-size: cover;
         bottom: 50%;
-        height: 70vh;
-        background-position:left;
+        max-height: 70vh;
+        background-position:center;
 
   .row {
     height: 100%;
@@ -283,13 +283,14 @@ main {
 
   img {
     max-height: 200px;
+    padding-bottom: 1rem;
   }
   .col {
     padding: 2rem;
   }
   p{
     width: 75%;
-    margin-left: 5rem;
+    margin-left: 1rem;
     text-align: start;
     font-size: 1.3rem;
   }
@@ -617,6 +618,66 @@ main {
     margin: 3rem;
   }
 }
+.dev, .design, .ui, .challenges {
+
+  p {
+    color: $dark-teal;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    font-size: 1.4em;
+  }
+  .row {
+    width: 80%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 0 auto;
+
+    h5 {
+      color: $med-dark-teal;
+      font-size: 1.3em;
+    }
+    .circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      padding: 1rem;
+      position: relative;
+
+      h2 {
+        position: absolute;
+        top: 20%;
+        left: 200%;
+      }
+
+    }
+    .circle1 {
+      background-color: #F5F5F5;
+    }
+    .circle2 {
+      background-color: #748CAB;
+    }
+    .circle3 {
+      background-color: #FBF9F0;
+    }
+    .circle4 {
+      background-color: #1C2D44;
+    }
+    .col {
+      margin: 0 auto;
+
+      h5 {
+        color: $med-dark-teal;
+        font-size: 1.3em;
+      }
+      p {
+        color: $dark-teal;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        font-size: 1.4em;
+      }
+    }
+  }
+}
 .project-description {
   margin: 0 auto;
 
@@ -690,20 +751,23 @@ main {
 
 footer {
   //margin-top: 3rem;
-  overflow-x: hidden;
-
-  height: 20vh;
+  //overflow-x: hidden;
   background-color: $dark-teal;
+  padding: 1rem;
 
   .row {
-    position: relative;
+    //height: 100%;
+    background-color: $dark-teal;
 
     .col1 {
       border-right: 2px solid white;
       margin-top: 2rem;
+      height: 100%;
+      background-color: $dark-teal;
     }
     .col {
       position: relative;
+      background-color: $dark-teal;
 
       img {
         max-height: 100px;
@@ -728,9 +792,10 @@ footer {
       }
     }
     .col2 {
-      position: absolute;
-      bottom: 0;
-      right: 0;
+      // position: absolute;
+      // bottom: 0;
+      // right: 0;
+      background-color: $dark-teal;
     }
   }
 }
@@ -751,6 +816,9 @@ footer {
   }
   #me1{
     position: relative;
+  }
+  h1 {
+    font-size: 1.8em;
   }
   .main-timeline {
     padding-top: 5rem;
@@ -805,6 +873,94 @@ footer {
       font-size: 2em;
     }
   }
+  .dev, .design, .ui, .challenges {
+
+    p {
+      color: $dark-teal;
+      padding-right: .5rem;
+      padding-left: .5rem;
+      font-size: .9em;
+    }
+    .row {
+      width: 80%;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      margin: 0 auto;
+
+      hr {
+        display: none;
+      }
+  
+      h5 {
+        color: $med-dark-teal;
+        font-size: 1em;
+      }
+      .circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        padding: 1rem;
+        position: relative;
+  
+        h2 {
+          position: absolute;
+          top: 20%;
+          left: 200%;
+        }
+  
+      }
+      .circle1 {
+        background-color: #F5F5F5;
+      }
+      .circle2 {
+        background-color: #748CAB;
+      }
+      .circle3 {
+        background-color: #FBF9F0;
+      }
+      .circle4 {
+        background-color: #1C2D44;
+      }
+      .col {
+        margin: 0 auto;
+  
+        h5 {
+          color: $med-dark-teal;
+          font-size: 1em;
+        }
+        p {
+          color: $dark-teal;
+          padding-right: .5rem;
+          padding-left: .5rem;
+          font-size: .9em;
+        }
+      }
+    }
+  }
+  .me {
+    margin: 0 auto;
+    padding: 0;
+
+    .row2 {
+      margin: 0 auto;
+      padding-bottom: .5rem;
+
+      .col {
+      img {
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      }
+      p {
+        font-size: .9em;
+      }
+    }   
+  }
+  .hero {
+    height: 100%;
+    background-position: center;
+    // background-image: none;
+  }
 }
 @media screen and (max-width: 900px) {
   
@@ -825,5 +981,28 @@ footer {
         }
       }
     }
+  }
+  footer {
+    //height: 40vh;
+    padding-bottom: 1rem;
+    // margin: 0;
+    .row {
+
+      .col {
+
+        ul {
+          padding: 1rem;
+        }
+        ul>li {
+          display: inline;
+          i{
+            font-size: 1.6em;
+            padding: .2rem;
+          }
+        }
+      }
+    }
+
+
   }
 }

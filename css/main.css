@@ -113,8 +113,8 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   bottom: 50%;
-  height: 70vh;
-  background-position: left;
+  max-height: 70vh;
+  background-position: center;
 }
 
 .hero .row {
@@ -277,6 +277,7 @@ main .contact-form label {
 
 .me img {
   max-height: 200px;
+  padding-bottom: 1rem;
 }
 
 .me .col {
@@ -285,7 +286,7 @@ main .contact-form label {
 
 .me p {
   width: 75%;
-  margin-left: 5rem;
+  margin-left: 1rem;
   text-align: start;
   font-size: 1.3rem;
 }
@@ -647,6 +648,71 @@ main p:last-child {
   margin: 3rem;
 }
 
+.dev p, .design p, .ui p, .challenges p {
+  color: #031B1C;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  font-size: 1.4em;
+}
+
+.dev .row, .design .row, .ui .row, .challenges .row {
+  width: 80%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin: 0 auto;
+}
+
+.dev .row h5, .design .row h5, .ui .row h5, .challenges .row h5 {
+  color: #376E6F;
+  font-size: 1.3em;
+}
+
+.dev .row .circle, .design .row .circle, .ui .row .circle, .challenges .row .circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 1rem;
+  position: relative;
+}
+
+.dev .row .circle h2, .design .row .circle h2, .ui .row .circle h2, .challenges .row .circle h2 {
+  position: absolute;
+  top: 20%;
+  left: 200%;
+}
+
+.dev .row .circle1, .design .row .circle1, .ui .row .circle1, .challenges .row .circle1 {
+  background-color: #F5F5F5;
+}
+
+.dev .row .circle2, .design .row .circle2, .ui .row .circle2, .challenges .row .circle2 {
+  background-color: #748CAB;
+}
+
+.dev .row .circle3, .design .row .circle3, .ui .row .circle3, .challenges .row .circle3 {
+  background-color: #FBF9F0;
+}
+
+.dev .row .circle4, .design .row .circle4, .ui .row .circle4, .challenges .row .circle4 {
+  background-color: #1C2D44;
+}
+
+.dev .row .col, .design .row .col, .ui .row .col, .challenges .row .col {
+  margin: 0 auto;
+}
+
+.dev .row .col h5, .design .row .col h5, .ui .row .col h5, .challenges .row .col h5 {
+  color: #376E6F;
+  font-size: 1.3em;
+}
+
+.dev .row .col p, .design .row .col p, .ui .row .col p, .challenges .row .col p {
+  color: #031B1C;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  font-size: 1.4em;
+}
+
 .project-description {
   margin: 0 auto;
 }
@@ -717,22 +783,24 @@ main p:last-child {
 }
 
 footer {
-  overflow-x: hidden;
-  height: 20vh;
   background-color: #031B1C;
+  padding: 1rem;
 }
 
 footer .row {
-  position: relative;
+  background-color: #031B1C;
 }
 
 footer .row .col1 {
   border-right: 2px solid white;
   margin-top: 2rem;
+  height: 100%;
+  background-color: #031B1C;
 }
 
 footer .row .col {
   position: relative;
+  background-color: #031B1C;
 }
 
 footer .row .col img {
@@ -766,9 +834,7 @@ footer .row .col ul > li i {
 }
 
 footer .row .col2 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  background-color: #031B1C;
 }
 
 @media (hover) {
@@ -788,6 +854,9 @@ footer .row .col2 {
   }
   #me1 {
     position: relative;
+  }
+  h1 {
+    font-size: 1.8em;
   }
   .main-timeline {
     padding-top: 5rem;
@@ -824,6 +893,81 @@ footer .row .col2 {
   .proj-page-title h1 {
     font-size: 2em;
   }
+  .dev p, .design p, .ui p, .challenges p {
+    color: #031B1C;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    font-size: .9em;
+  }
+  .dev .row, .design .row, .ui .row, .challenges .row {
+    width: 80%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 0 auto;
+  }
+  .dev .row hr, .design .row hr, .ui .row hr, .challenges .row hr {
+    display: none;
+  }
+  .dev .row h5, .design .row h5, .ui .row h5, .challenges .row h5 {
+    color: #376E6F;
+    font-size: 1em;
+  }
+  .dev .row .circle, .design .row .circle, .ui .row .circle, .challenges .row .circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 1rem;
+    position: relative;
+  }
+  .dev .row .circle h2, .design .row .circle h2, .ui .row .circle h2, .challenges .row .circle h2 {
+    position: absolute;
+    top: 20%;
+    left: 200%;
+  }
+  .dev .row .circle1, .design .row .circle1, .ui .row .circle1, .challenges .row .circle1 {
+    background-color: #F5F5F5;
+  }
+  .dev .row .circle2, .design .row .circle2, .ui .row .circle2, .challenges .row .circle2 {
+    background-color: #748CAB;
+  }
+  .dev .row .circle3, .design .row .circle3, .ui .row .circle3, .challenges .row .circle3 {
+    background-color: #FBF9F0;
+  }
+  .dev .row .circle4, .design .row .circle4, .ui .row .circle4, .challenges .row .circle4 {
+    background-color: #1C2D44;
+  }
+  .dev .row .col, .design .row .col, .ui .row .col, .challenges .row .col {
+    margin: 0 auto;
+  }
+  .dev .row .col h5, .design .row .col h5, .ui .row .col h5, .challenges .row .col h5 {
+    color: #376E6F;
+    font-size: 1em;
+  }
+  .dev .row .col p, .design .row .col p, .ui .row .col p, .challenges .row .col p {
+    color: #031B1C;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    font-size: .9em;
+  }
+  .me {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .me .row2 {
+    margin: 0 auto;
+    padding-bottom: .5rem;
+  }
+  .me .row2 .col img {
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .me .row2 p {
+    font-size: .9em;
+  }
+  .hero {
+    height: 100%;
+    background-position: center;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -835,6 +979,19 @@ footer .row .col2 {
     padding: .2rem;
     font-size: 2em;
     color: white;
+  }
+  footer {
+    padding-bottom: 1rem;
+  }
+  footer .row .col ul {
+    padding: 1rem;
+  }
+  footer .row .col ul > li {
+    display: inline;
+  }
+  footer .row .col ul > li i {
+    font-size: 1.6em;
+    padding: .2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
