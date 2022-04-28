@@ -115,6 +115,7 @@ p {
   bottom: 50%;
   max-height: 70vh;
   background-position: center;
+  position: relative;
 }
 
 .hero .row {
@@ -125,9 +126,11 @@ p {
   height: 100%;
 }
 
-.hero .col1 img {
-  padding-top: 3rem;
+.hero .col1 #jc {
   max-height: 300px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
 }
 
 .hero .col2 {
@@ -174,45 +177,28 @@ p {
   position: absolute;
   top: 10%;
   right: 10%;
-  max-height: 320px;
-}
-
-.hero-contact {
-  padding-top: 3rem;
-  height: 55vh;
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-  padding-bottom: 3rem;
-}
-
-.hero-contact #jc {
-  max-height: 190px;
-  position: absolute;
-  top: 0;
-  left: -50%;
+  max-height: 250px;
 }
 
 .hero-contact .row {
-  height: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.hero-contact .row .col #hero-contact {
-  max-width: 90%;
+.hero-contact .row .col {
+  position: relative;
 }
 
-.hero-contact .row .contact-pane {
-  max-height: 100%;
+.hero-contact .row .col #jc2 {
+  display: none;
 }
 
-.hero-contact .contact-info {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.hero-contact .row .col h1 {
+  font-size: 3.5em;
 }
 
-.hero-contact .contact-info p {
-  font-size: 1.4em;
-  padding-left: 2.5rem;
+.hero-contact .row .col p {
+  font-size: 1.2em;
 }
 
 .skills {
@@ -224,6 +210,10 @@ p {
   margin: 0 auto;
   padding-left: 25%;
   padding-right: 25%;
+}
+
+.skills .row {
+  margin: 0 auto;
 }
 
 .skills ul {
@@ -254,6 +244,19 @@ hr {
   padding-top: 5rem;
 }
 
+.wrapper2 {
+  min-height: 90vh;
+}
+
+.success {
+  background-color: rgba(80, 77, 77, 0.6);
+  width: 60%;
+  margin: 0 auto;
+  padding: 1rem;
+  padding-top: 1rem;
+  border-radius: 35px;
+}
+
 main .contact-form {
   margin: 0 auto;
   background-color: rgba(56, 51, 51, 0.35);
@@ -271,8 +274,7 @@ main .contact-form label {
 }
 
 .me {
-  margin-top: -2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 
 .me img {
@@ -281,14 +283,16 @@ main .contact-form label {
 }
 
 .me .col {
-  padding: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .me p {
-  width: 75%;
+  width: 85%;
   margin-left: 1rem;
   text-align: start;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
 }
 
 .me .row2 {
@@ -297,17 +301,17 @@ main .contact-form label {
 }
 
 .me h1 {
-  padding-top: 3em;
+  padding-top: .5rem;
 }
 
 .recent {
-  min-height: 45vh;
-  background-color: white;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
+  background-color: rgba(80, 77, 77, 0.6);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
   margin: 0 auto;
-  width: 90%;
-  border-radius: 15px;
+  margin-bottom: 3rem;
+  width: 85%;
+  border-radius: 35px;
 }
 
 .recent .header {
@@ -348,6 +352,7 @@ main .contact-form label {
 .gallery .row {
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 3rem;
 }
 
 .gallery .col {
@@ -361,6 +366,7 @@ main .contact-form label {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  padding-bottom: 0;
 }
 
 .gallery .col i {
@@ -368,11 +374,14 @@ main .contact-form label {
   padding-left: .5em;
   padding-right: .5em;
   padding-top: .5rem;
+  margin-bottom: 3rem;
 }
 
 .gallery .col .card {
   margin: 0 auto;
   width: 90%;
+  height: 90%;
+  padding-bottom: 2rem;
 }
 
 .call {
@@ -512,20 +521,24 @@ main .contact-form label {
   width: 70%;
 }
 
-.process .col h1 {
+.process .row {
+  margin: 0 auto;
+}
+
+.process .row .col h1 {
   margin-bottom: 2rem;
 }
 
-.process .col i {
+.process .row .col i {
   font-size: 1.5em;
   color: #DA7B93;
 }
 
-.process .col h3 {
+.process .row .col h3 {
   color: white;
 }
 
-.process .col p {
+.process .row .col p {
   font-size: 1.2em;
 }
 
@@ -616,14 +629,14 @@ main p:last-child {
   position: absolute;
   max-height: 190px;
   top: 5%;
-  left: 0;
+  left: 0%;
 }
 
 .project-heading #me1 {
   position: absolute;
   top: 10%;
   right: 10%;
-  max-height: 320px;
+  max-height: 200px;
 }
 
 .description-body {
@@ -819,7 +832,6 @@ footer .row .col ul {
   right: 0;
   margin: auto;
   height: 20px;
-  /*requires explicit height*/
 }
 
 footer .row .col ul > li {
@@ -849,6 +861,23 @@ footer .row .col2 {
 }
 
 @media screen and (max-width: 600px) {
+  .hero-contact .row {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .hero-contact .row .col {
+    position: relative;
+  }
+  .hero-contact .row .col h1 {
+    font-size: 2.5em;
+  }
+  .hero-contact .row .col p {
+    font-size: 1.4em;
+  }
+  .hero-contact .row .col #jc2 {
+    display: inline;
+    max-height: 150px;
+  }
   #jc {
     height: 75px;
   }
@@ -861,10 +890,6 @@ footer .row .col2 {
   .main-timeline {
     padding-top: 5rem;
     max-width: 85%;
-  }
-  .hero-contact .row .contact-pane p {
-    font-size: 1.1em;
-    padding-left: 2.5rem;
   }
   .project-description {
     margin: 0 auto;
@@ -965,15 +990,31 @@ footer .row .col2 {
     font-size: .9em;
   }
   .hero {
-    height: 100%;
     background-position: center;
+  }
+  .hero .row .col h1 {
+    font-size: 2.9em;
+  }
+  .hero .row .col p {
+    font-size: 1.3em;
+    padding: 1rem;
   }
 }
 
 @media screen and (max-width: 900px) {
+  .hero .row .col #jc {
+    height: 75px;
+  }
   .skills {
     padding-left: 5%;
     padding-right: 5%;
+    margin: 0 auto;
+  }
+  .skills .row {
+    margin: 0 auto;
+  }
+  .skills .row .col {
+    margin: 0 auto;
   }
   .skills ul li i {
     padding: .2rem;

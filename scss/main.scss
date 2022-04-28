@@ -1,3 +1,10 @@
+//Text Styles 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+$font-sans: 'Open Sans', sans-serif;
+
+//Colors
+$black: #34435E;
+$white: #ffffff;
 $dark-teal: #031B1C;
 $med-dark-teal: #376E6F;
 $med-light-teal: #57B4B5;
@@ -91,14 +98,11 @@ p {
   font-size: 1.4em;
 
   .navigation-bar {
-    // display: inline-block;
-    // clear: both;
     padding-left: 1rem;
     .nav-link {
       padding-left: 2rem;
       padding-right: 2rem;
     }
-
 
     a:link, a:visited, a:active {
       font-family: 'Oswald';
@@ -114,24 +118,26 @@ p {
     padding: 1rem;
   }
 }
-
 .hero {
-        background-image: url("../img/hero2.jpg"); 
-        background-repeat: no-repeat;
-        background-size: cover;
-        bottom: 50%;
-        max-height: 70vh;
-        background-position:center;
+  background-image: url("../img/hero2.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 50%;
+  max-height: 70vh;
+  background-position:center;
+  position: relative;
 
   .row {
     height: 100%;
   }
   .col1 {
-    
     height: 100%;
-    img {
-      padding-top: 3rem;
+
+    #jc {
       max-height: 300px;
+      position: absolute;
+      top: 0%;
+      left: 0%;
     }
   }
   .col2 {
@@ -150,7 +156,6 @@ p {
       font-weight: 700;
     }
   }
-  
 }
 .about-me {
   overflow-x: hidden;
@@ -173,49 +178,26 @@ p {
     position: absolute;
     top: 10%;
     right: 10%;
-    max-height: 320px;
+    max-height: 250px;
   }
 }
-
-
 .hero-contact {
-  padding-top: 3rem;
-  height: 55vh;
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-  padding-bottom: 3rem;
-
-  #jc {
-    max-height: 190px;
-    position: absolute;
-    top: 0;
-    left: -50%;
-  }
-
   .row {
-    height: 100%;
+    width: 80%;
+    margin: 0 auto;
 
     .col {
+      position: relative;
 
-
-      #hero-contact {
-        max-width:90%;
+      #jc2 {
+        display: none;
       }
-    }
-    .contact-pane{
-      //background-color: #FFE3EA;
-      max-height: 100%;
-    }
-  }
-  .contact-info {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-
-    p {
-      font-size: 1.4em;
-      padding-left: 2.5rem;
-      
+      h1 {
+        font-size: 3.5em;
+      }
+      p {
+        font-size: 1.2em;
+      }
     }
   }
 }
@@ -224,13 +206,14 @@ p {
   padding-top: 3rem;
   padding-bottom: 3rem;
   position: top;
-
   width: 100%;
   margin: 0 auto;
   padding-left: 25%;
   padding-right: 25%;
 
-
+  .row {
+    margin: 0 auto;
+  }
   ul {
     list-style: none;
     display: inline;
@@ -241,13 +224,11 @@ p {
         padding: .2rem;
         font-size: 3.5em;
         color: white;
-
       }
     }
   }
 }
 hr {
-
   margin-top: 3rem;
   color: #DBFFFF;
   width: 80%;
@@ -257,6 +238,17 @@ hr {
 }
 .main-timeline {
   padding-top: 5rem;
+}
+.wrapper2 {
+  min-height: 90vh;
+}
+.success {
+  background-color: rgba(80, 77, 77, 0.6);
+  width: 60%;
+  margin: 0 auto;
+  padding: 1rem;
+  padding-top: 1rem;
+  border-radius: 35px;
 }
 main {
 
@@ -276,40 +268,41 @@ main {
     }
   }
 }
-
 .me {
-  margin-top: -2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 
   img {
     max-height: 200px;
     padding-bottom: 1rem;
   }
   .col {
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
   }
   p{
-    width: 75%;
+    width: 85%;
     margin-left: 1rem;
     text-align: start;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
   }
   .row2 {
     width: 80%;
     margin: 0 auto;
   }
   h1 {
-    padding-top: 3em;
+    padding-top: .5rem;
   }
 }
 .recent {
-  min-height: 45vh;
-  background-color: white;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
+  background-color: rgba(80, 77, 77, 0.6);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
   margin: 0 auto;
-  width: 90%;
-  border-radius: 15px;
+  margin-bottom: 3rem;
+  width: 85%;
+  border-radius: 35px;
 
   .header {
     padding-top: 2rem;
@@ -322,8 +315,8 @@ main {
   .col {
     padding: 1rem;
     margin: 0 auto;
+
     .card {
-      //color: $dark-gray;
       margin: 0 auto;
       width: 90%;
     }
@@ -332,7 +325,6 @@ main {
 .gallery {
   min-height: 45vh;
   background-color: rgba(56, 51, 51, 0.35);
-  
   padding-bottom: 5rem;
   padding-top: 5rem;
   margin: 0 auto;
@@ -346,6 +338,7 @@ main {
   .row {
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 3rem;
   }
   .col {
     padding: 1rem;
@@ -355,18 +348,20 @@ main {
       margin: 0 auto;
       border: .5px solid $med-light-teal;
       width: fit-content;
+      padding-bottom: 0;
     }
     i {
       font-size: 1.4em;
       padding-left: .5em;
       padding-right: .5em;
       padding-top: .5rem;
-
+    margin-bottom: 3rem;
     }
     .card {
-      //color: $dark-gray;
       margin: 0 auto;
       width: 90%;
+      height: 90%;
+      padding-bottom: 2rem;
     }
   }
 }
@@ -476,36 +471,27 @@ main {
   padding-top: 2rem;
   width: 70%;
 
-  .col {
+  .row {
+    margin: 0 auto;
 
+    .col {
     
-    h1 {
-      margin-bottom: 2rem;
-    }
-    i {
-      font-size: 1.5em;
-      color: $med-light-pink;
-    }
-    h3 {
-      color: white;
-    }
-    p {
-      font-size: 1.2em;
+      h1 {
+        margin-bottom: 2rem;
+      }
+      i {
+        font-size: 1.5em;
+        color: $med-light-pink;
+      }
+      h3 {
+        color: white;
+      }
+      p {
+        font-size: 1.2em;
+      }
     }
   }
-  
 }
-
-
-//Text Styles 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
-$font-sans: 'Open Sans', sans-serif;
-
-//Colors
-$black: #34435E;
-$white: #ffffff;
-
-
 
 main {
   min-width: 300px;
@@ -525,7 +511,6 @@ main {
     position: relative;
     color: white;
     
-    //numbers
     &:before {
       content: counter(section);
       position: absolute;
@@ -541,7 +526,6 @@ main {
       font-weight: 700;
     }
   }
-  //odd number borders
   p:nth-child(odd) {
     border-right: 3px solid;
     padding-left: 0;
@@ -551,7 +535,6 @@ main {
       margin-left: -25px;
     }
   }
-  //even number borders
   p:nth-child(even) {
     border-left: 3px solid;
     padding-right: 0;
@@ -561,7 +544,6 @@ main {
       margin-right: -25px;
     }
   }
-  //handle first and last
   p:first-child {
     border-top: 0;
     border-top-right-radius:0;
@@ -573,7 +555,7 @@ main {
   }
 }
 
-  //  PROJECT DESCRIPTIONS STYLES //
+  //  PROJECT  STYLES //
   .project-heading {
     overflow-x: hidden;
     position: relative;
@@ -589,16 +571,15 @@ main {
       position: absolute;
       max-height: 190px;
       top: 5%;
-      left: 0;
+      left: 0%;
     }
     #me1 {
       position: absolute;
       top: 10%;
       right: 10%;
-      max-height: 320px;
+      max-height: 200px;
     }
   }
-
 .description-body {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -648,7 +629,6 @@ main {
         top: 20%;
         left: 200%;
       }
-
     }
     .circle1 {
       background-color: #F5F5F5;
@@ -681,16 +661,12 @@ main {
 .project-description {
   margin: 0 auto;
 
-
   .row {
     width: 90%;
     margin: 0 auto;
 
-
-
     .col {
       margin: 0 auto;
-
 
       .project-title {
 
@@ -747,16 +723,11 @@ main {
     }
   }
 }
-
-
 footer {
-  //margin-top: 3rem;
-  //overflow-x: hidden;
   background-color: $dark-teal;
   padding: 1rem;
 
   .row {
-    //height: 100%;
     background-color: $dark-teal;
 
     .col1 {
@@ -778,7 +749,7 @@ footer {
         position:absolute;
         top: 0; bottom: 0; left: 0; right: 0;
         margin: auto;
-        height: 20px; /*requires explicit height*/
+        height: 20px;
       }
       ul > li {
         list-style: none;
@@ -792,9 +763,6 @@ footer {
       }
     }
     .col2 {
-      // position: absolute;
-      // bottom: 0;
-      // right: 0;
       background-color: $dark-teal;
     }
   }
@@ -805,14 +773,31 @@ footer {
         transform: translateY(65%);
         transition: transform 500ms ease;
     }
-    
-
 }
 @media screen and (max-width: 600px) {
+  .hero-contact {
+    .row {
+      width: 80%;
+      margin: 0 auto;
+  
+      .col {
+        position: relative;
+
+        h1 {
+          font-size: 2.5em;
+        }
+        p {
+          font-size: 1.4em;
+        }
+        #jc2 {
+          display: inline;
+          max-height: 150px;
+        }
+      }
+    }
+  }
   #jc {
     height: 75px;
-    //display: none;
-
   }
   #me1{
     position: relative;
@@ -823,19 +808,6 @@ footer {
   .main-timeline {
     padding-top: 5rem;
     max-width: 85%;
-  }
-  .hero-contact {
-    
-    .row {
-
-      .contact-pane {
-
-        p {
-          font-size: 1.1em;
-          padding-left: 2.5rem;
-        }
-      }
-    }
   }
   .project-description {
     margin: 0 auto;
@@ -890,7 +862,6 @@ footer {
       hr {
         display: none;
       }
-  
       h5 {
         color: $med-dark-teal;
         font-size: 1em;
@@ -907,7 +878,6 @@ footer {
           top: 20%;
           left: 200%;
         }
-  
       }
       .circle1 {
         background-color: #F5F5F5;
@@ -957,19 +927,50 @@ footer {
     }   
   }
   .hero {
-    height: 100%;
     background-position: center;
-    // background-image: none;
+
+    .row {
+
+      .col {
+
+        h1 {
+          font-size: 2.9em;
+        }
+        p {
+          font-size: 1.3em;
+          padding: 1rem;
+        }
+      }
+    }
+
   }
 }
 @media screen and (max-width: 900px) {
-  
+  .hero {
+
+    .row {
+
+      .col {
+
+        #jc {
+          height: 75px;
+        }
+      }
+    }
+  }
   .skills {
     padding-left: 5%;
     padding-right: 5%;
+    margin: 0 auto;
 
+    .row {
+      margin: 0 auto;
+   
+      .col {
+        margin: 0 auto;
+      }
+    }
     ul {
-
       
       li {
 
@@ -983,9 +984,7 @@ footer {
     }
   }
   footer {
-    //height: 40vh;
     padding-bottom: 1rem;
-    // margin: 0;
     .row {
 
       .col {
@@ -1002,7 +1001,5 @@ footer {
         }
       }
     }
-
-
   }
 }
