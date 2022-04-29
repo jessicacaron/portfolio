@@ -1003,6 +1003,7 @@ footer .row .col2 {
 @media screen and (max-width: 900px) {
   .hero .row .col #jc {
     height: 75px;
+    left: 75%;
   }
   .skills {
     padding-left: 5%;
