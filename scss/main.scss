@@ -160,7 +160,7 @@ p {
 .about-me {
   overflow-x: hidden;
   position: relative;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 
   .row {
     height: 20vh;
@@ -775,6 +775,14 @@ footer {
     }
 }
 @media screen and (max-width: 600px) {
+  .about-me {
+  
+    .row {
+      height: 10vh;
+
+    }
+   
+  }
   .hero-contact {
     .row {
       width: 80%;

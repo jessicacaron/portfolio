@@ -154,7 +154,7 @@ p {
 .about-me {
   overflow-x: hidden;
   position: relative;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 
 .about-me .row {
@@ -853,6 +853,9 @@ footer .row .col2 {
 }
 
 @media screen and (max-width: 600px) {
+  .about-me .row {
+    height: 10vh;
+  }
   .hero-contact .row {
     width: 80%;
     margin: 0 auto;
