@@ -134,10 +134,10 @@ p {
     height: 100%;
 
     #jc {
-      max-height: 300px;
+      max-height: 200px;
       position: absolute;
-      top: 0%;
-      left: 0%;
+      top: 15%;
+      left: -30%;
     }
   }
   .col2 {
@@ -328,7 +328,7 @@ main {
   padding-bottom: 5rem;
   padding-top: 5rem;
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
   border-radius: 15px;
 
   .header {
@@ -336,7 +336,7 @@ main {
     margin: 0 auto;
   }
   .row {
-    width: 100%;
+    //width: 100%;
     margin: 0 auto;
     // padding-bottom: 3rem;
   }
@@ -348,20 +348,20 @@ main {
       margin: 0 auto;
       border: .5px solid $med-light-teal;
       width: fit-content;
-      padding-bottom: 0;
+      //padding-bottom: 0;
     }
     i {
-      font-size: 1.4em;
+      font-size: 1.8em;
       padding-left: .5em;
       padding-right: .5em;
       padding-top: .5rem;
-    margin-bottom: 3rem;
+      //margin-bottom: 3rem;
     }
     .card {
       margin: 0 auto;
-      width: 90%;
-      height: 90%;
-      padding-bottom: 2rem;
+      // width: 100%;
+      // height: 100%;
+      //padding-bottom: 2rem;
     }
   }
 }
@@ -796,8 +796,14 @@ footer {
       }
     }
   }
-  #jc {
-    height: 75px;
+  .project-heading {
+    #jc {
+      max-height: 95px;
+    }
+  }
+
+  .jc1 {
+    display: none;
   }
   #me1{
     position: relative;
@@ -946,6 +952,9 @@ footer {
   }
 }
 @media screen and (max-width: 900px) {
+  .jc1 {
+    display: none;
+  }
   .hero {
 
     .row {
