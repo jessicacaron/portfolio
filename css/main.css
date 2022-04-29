@@ -873,6 +873,9 @@ footer .row .col2 {
   .project-heading #jc {
     max-height: 95px;
   }
+  #jc2, #jc {
+    display: none;
+  }
   .jc1 {
     display: none;
   }
